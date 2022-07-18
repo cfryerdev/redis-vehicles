@@ -118,7 +118,11 @@ Result:
 
 As we can see, we have 8 unique vins that exist in these three sets. Cool!
 
-### Returning results
+### Extra: Returning json single result
+
+Information here...
+
+### Extra: Returning json list results
 
 So we have an array of vin numbers, well now we want to return this as an array of json payloads right? Thats why we have our `data:vehicles:*` set right?
 
