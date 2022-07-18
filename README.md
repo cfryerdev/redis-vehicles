@@ -88,14 +88,19 @@ Alright here is where the rubber hits the road: How do I use this data to create
 
 ### Your first Union
 
-Lets say we want to get a list of vehicles which are in fact cars. We could have a composite set with the following sets within it: `` or we can query this using a union. Check it out:
+Lets say we want to get a list of vehicles which are in fact cars. We could have a composite set with the following sets within it: `Sedan Coupe and Convertible` or we can query this using a union. What if a composite doesnt exist and you need to combine results in a one-off query. Well its easy, check it out:
 
 Command: 
 ```
-...
+SUNION sets:bodies:Sedan sets:bodies:Coupe sets:bodies:Convertible
 ```
 Result:
 ```
+1) "WDDHF5KB0CA531376"
+2) "4T1B11HK3JU628223"
+3) "JTDKN3DU1F1873459"
+4) "4S3BNAR61K3034957"
+5) "3MYDLBYV4KY513525"
 ...
 ```
 
