@@ -140,3 +140,5 @@ If you want to know more about Set Theoryl This subject tends to be quite heavy,
 - https://www.youtube.com/watch?v=tyDKR4FG3Yw
 - https://www.youtube.com/watch?v=xZELQc11ACY
 - https://www.youtube.com/watch?v=4TlCToZZ5gA
+
+Thanks!
