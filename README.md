@@ -52,17 +52,25 @@ You will immediately notice the duplicitive nature of this pattern, but this is 
 
 Information here...
 
+![Redis_Sets](images/redis_sets.png)
+
 ### Inverse Sets
 
 Information here...
+
+![Redis_InverseSets](images/redis_inversesets.png)
+
+### Composits or Supersets
+
+Information here...
+
+![Redis_Composits](images/redis_composits.png)
 
 ### Data
 
 Information here...
 
-### Composits or Supersets
-
-Information here...
+![Redis_Data](images/redis_data.png)
 
 ### Your first Union
 
