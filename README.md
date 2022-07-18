@@ -1,7 +1,7 @@
 # Set Theory using Redis & Vehicles
 A sample redis hydrator using generic vehicle data. In thie example we have two files:
 
-- `_vehicles.json`: The vehicle database we will be searching.
+- `_vehicles.json`: The vehicle database we will be searching, 1800 records.
 - `Loader.js`: Hydrates redis with sets based on the vehicle database. 
 
 During this example, we will be using redis and basic set theory principles to search vehicles quickly.
