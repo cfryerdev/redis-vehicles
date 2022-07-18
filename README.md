@@ -137,7 +137,16 @@ As we can see, we have 8 unique vins that exist in these three sets. Cool!
 
 ### Extra: Returning json single result
 
-Information here...
+Returning the json for a single record is quite simple with the get command! The syntax requires just a single key to return the value:
+
+Command:
+```
+GET data:vehicles:1G1FB3DS1K0113498
+```
+Result:
+```
+{ "vin": "1G1FB3DS1K0113498", "year": 2019, "make": "Chevrolet", "model": "Camaro"...
+```
 
 ### Extra: Returning json list results
 
