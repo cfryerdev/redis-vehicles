@@ -9,12 +9,12 @@ A sample redis hydrator using generic vehicle data. In thie example we have two 
 
 For this demo we need to start redis and hydrate data in the new searchable format.
 
-- Start Redis: `docker run -d --name dev-redis -p 6379:6379 -d redis`
-- Hydrate Redis: `node --experimental-json-modules loader.js`
+1) Start Redis: `docker run -d --name dev-redis -p 6379:6379 -d redis`
+2) Hydrate Redis: `node --experimental-json-modules loader.js`
 
 Now we can start redis commander which is the tool we will use to look at the data.
 
-- Install: `npm install -g redis-commander`
+3) Install: `npm install -g redis-commander`
 
 ## Looking at the data
 
