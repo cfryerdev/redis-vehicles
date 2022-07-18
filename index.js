@@ -53,8 +53,7 @@ data.value.forEach((row, i) => {
                 cylinders: row.cylinders,
                 displacement: parseFloat(row.displacement),
             },
-            transmission: row.transmission,
-            meta_data: metaData
+            transmission: row.transmission
         });
     }
 });
