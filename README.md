@@ -4,6 +4,7 @@ A sample redis hydrator using generic vehicle data. In thie example we have two 
 - `_vehicles.json`: The vehicle database we will be searching.
 - `Loader.js`: Hydrates redis with sets based on the vehicle database. 
 
+During this example, we will be using redis and basic set theory principles to search vehicles quickly.
 
 ## Getting Started
 
@@ -19,3 +20,18 @@ Now we can start redis commander which is the tool we will use to look at the da
 ## Looking at the data
 
 First off start Redis Commander by running `redis-commander` in the terminal.
+
+
+## Browsing a Set
+
+## Supersets
+
+## Inverse Sets
+
+## Your first Union
+
+## Your first Intersection
+
+## Conclusion
+
+You can use this pattern to easily build out complex search/filtering systems using basic set theory principles. 
