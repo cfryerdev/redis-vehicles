@@ -129,7 +129,9 @@ Command:
 JSON.ARRAPPEND data:vehicles:1G1FB3DS1K0113498 data:vehicles:2C3CDZJG4KH617616 $
 ```
 
-But I would recommend doing this in code with a library, just make sure you do this union of values on the redis server, not in code. We dont want to hit redis once for each record 😛.
+But I would recommend doing this in code with a library, just make sure you do this union of values on the redis server, not in code. We dont want to hit redis once for each record 😛. Example:
+
+![Redis_JsonAppend](images/code_jsonappend.png)
 
 ## Conclusion
 
