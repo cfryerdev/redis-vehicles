@@ -1,7 +1,7 @@
 import { createClient } from 'redis';
 
 console.log('Loading Vehicles ...');
-import data from './_vehicles.json' assert { type: 'json' };
+import data from './database.json' assert { type: 'json' };
 
 const runApplication = async () => { 
     console.log('Connecting to redis ...');
