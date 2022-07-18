@@ -2,7 +2,7 @@
 A sample redis hydrator using generic vehicle data. In thie example we have two files:
 
 - `_vehicles.json`: The vehicle database we will be searching, 1800 records.
-- `Loader.js`: Hydrates redis with sets based on the vehicle database. 
+- `loader.js`: Hydrates redis with sets based on the vehicle database. 
 
 During this example, we will be using redis and basic set theory principles to search vehicles quickly.
 
@@ -37,6 +37,7 @@ Now we can start redis commander which is the tool we will use to look at the da
 ### Looking at the data
 
 First off start Redis Commander by running `redis-commander` in the terminal. Once you have that running, navigate to: `localhost:8081` in a web browser and add a connection to `localhost:6379`. Now you should see your databases, inside `db0` will be our sets we will be working with today.
+
 
 
 ### Duplicative Data & Lenses
