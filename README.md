@@ -90,7 +90,33 @@ Information here...
 
 ### Your first Intersection
 
-Information here...
+Example: Lets say we want to limit our responses to all  2019 cars with two doors... What would that command look like? Well if we look we have sets for these attributes: 
+
+```
+sets:doors:*
+sets:types:*
+sets:years:*
+```
+
+So if we want to find our vehicle, we need to ensure we only return vin numbers that exist in **ALL THREE** of these sets right? (the order of the sets does not matter here)
+
+Command: 
+```
+SINTER sets:doors:2 sets:types:Car sets:years:2019
+```
+Result:
+```
+1) "1G1FB3DS1K0113498"
+2) "2C3CDZJG4KH617616"
+3) "WMWXP7C59K2A49781"
+4) "JN1AZ4EH0KM421666"
+5) "3VWFD7ATXKM717101"
+6) "1FA6P8CF4K5196010"
+7) "1FA6P8TH5K5175362"
+8) "2C3CDZAG0KH731743"
+```
+
+As we can see, we have 8 unique vins that exist in these three sets. Cool!
 
 ## Conclusion
 
