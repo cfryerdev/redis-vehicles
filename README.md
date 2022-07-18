@@ -50,6 +50,10 @@ You will immediately notice the duplicitive nature of this pattern, but this is 
 
 We want as many sets, inverse sets, and supersets as possible. Ideally as many ways you might look at data, we want sets for each.
 
+### Counts
+
+Natively in each set and namespace, we have a length that is stored at write. We dont have to query for this, we can simply use a command or visually look at the amount of vehicles we have in each set! 
+
 ### Browsing a Set
 
 Simply expanding out shows the heiarchy of a set's namespace by using a folder structure. In redis these are flat sets, but Redis Commander gives us a good visual. We can see in the following example that a simple set has a key and a list of values. In this case a list of all cars with three doors.
