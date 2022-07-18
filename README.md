@@ -31,6 +31,10 @@ Now we can start redis commander which is the tool we will use to look at the da
 First off start Redis Commander by running `redis-commander` in the terminal. Once you have that running, navigate to: `localhost:8081` in a web browser and add a connection to `localhost:6379`. Now you should see your databases, inside `db0` will be our sets we will be working with today.
 
 
+## Duplicative Data & Lenses
+
+You will immediately notice the duplicitive nature of this pattern, but this is absolutely intentional. Each set is a "lense" in which you look at the data. We trade response time, for storage cost, which is signifigantly cheaper.
+
 ## Browsing a Set
 
 ## Supersets
