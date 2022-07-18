@@ -48,6 +48,10 @@ Well how do we create these sets... well its actually quite simple and requires 
 
 ![Code_Hydrate](images/code_hydrate.png)
 
+**Note: Obviously the above code could be done in parallel but I kept it synchronous for ease of reading.**
+
+Lets continue on...
+
 ### Duplicative Data & Lenses
 
 You will immediately notice the duplicitive nature of this pattern, but this is absolutely intentional. Each set is a "lense" in which you look at the data. We trade response time, for storage cost, which is signifigantly cheaper.
