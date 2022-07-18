@@ -95,3 +95,5 @@ Information here...
 ## Conclusion
 
 You can use this pattern to easily build out complex search/filtering systems using basic set theory principles. 
+
+Want to know more commands? [https://redis.io/commands/](https://redis.io/commands/)
