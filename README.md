@@ -9,9 +9,9 @@ For this demo we need to start redis and hydrate data in the new searchable form
 - Start Redis: `docker run -d --name dev-redis -p 6379:6379 -d redis`
 - Hydrate Redis: `node --experimental-json-modules loader.js`
 
-Now we can start redis commander and look at the data
+Now we can start redis commander which is the tool we will use to look at the data.
 
-- Install: `npm install -g redis-commander
+- Install: `npm install -g redis-commander`
 
 ## Looking at the data
 
