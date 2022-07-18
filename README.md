@@ -28,7 +28,7 @@ Now we can start redis commander which is the tool we will use to look at the da
 
 ## Looking at the data
 
-First off start Redis Commander by running `redis-commander` in the terminal. Once you have that installed, navigate to: `localhost:8081` in a web browser and add a connection to `localhost:6379`. Now you should see your databases, inside db0 will be our sets we will be working with today.
+First off start Redis Commander by running `redis-commander` in the terminal. Once you have that running, navigate to: `localhost:8081` in a web browser and add a connection to `localhost:6379`. Now you should see your databases, inside `db0` will be our sets we will be working with today.
 
 
 ## Browsing a Set
