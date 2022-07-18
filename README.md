@@ -16,6 +16,8 @@ During this example, we will be using redis and basic set theory principles to s
 
 ## Recommended Watches
 
+These tend to be quite heavy, so I recommend watching these after this exercise. 
+
 - https://www.youtube.com/watch?v=tyDKR4FG3Yw
 - https://www.youtube.com/watch?v=xZELQc11ACY
 - https://www.youtube.com/watch?v=4TlCToZZ5gA
