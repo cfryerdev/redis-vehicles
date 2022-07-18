@@ -50,13 +50,27 @@ You will immediately notice the duplicitive nature of this pattern, but this is 
 
 ### Browsing a Set
 
-### Supersets
+Information here...
 
 ### Inverse Sets
 
+Information here...
+
+### Data
+
+Information here...
+
+### Composits or Supersets
+
+Information here...
+
 ### Your first Union
 
+Information here...
+
 ### Your first Intersection
+
+Information here...
 
 ## Conclusion
 
