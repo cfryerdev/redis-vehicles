@@ -14,14 +14,6 @@ During this example, we will be using redis and basic set theory principles to s
 - **Union:** The result of two or more sets joined, containing the values from all sets. (No duplicates)
 - **Inverse Sets:** A set containing keys, where the value is the key.
 
-### Recommended Watches
-
-These tend to be quite heavy, so I recommend watching these after this exercise. 
-
-- https://www.youtube.com/watch?v=tyDKR4FG3Yw
-- https://www.youtube.com/watch?v=xZELQc11ACY
-- https://www.youtube.com/watch?v=4TlCToZZ5gA
-
 ## Getting Started
 
 For this demo we need to start redis and hydrate data in the new searchable format.
@@ -141,4 +133,10 @@ But I would recommend doing this in code with a library, just make sure you do t
 
 You can use this pattern to easily build out complex search/filtering systems using basic set theory principles. 
 
-Want to know more commands? [https://redis.io/commands/](https://redis.io/commands/)
+Want to know more redis commands? [https://redis.io/commands/](https://redis.io/commands/)
+
+If you want to know more about Set Theoryl This subject tends to be quite heavy, so I recommend watching these after this exercise. 
+
+- https://www.youtube.com/watch?v=tyDKR4FG3Yw
+- https://www.youtube.com/watch?v=xZELQc11ACY
+- https://www.youtube.com/watch?v=4TlCToZZ5gA
