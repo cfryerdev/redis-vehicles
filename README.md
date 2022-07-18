@@ -1,7 +1,7 @@
 # Set Theory using Redis & Vehicles (Beginners)
 Set Theory can be a deep and complex topic that may scare many away. Over the years I have found teaching the basic concepts can make this fun and useful in your daily life as an engineer.
 
-This is a sample redis hydrator using generic vehicle data. In thie example we have two files:
+**This is a sample redis dataset using generic vehicle data allowng us to view and filter vehicle data in single digit milliseconds.** In thie example we have two files:
 
 - `database.json`: The vehicle database we will be searching, 1800 records.
 - `loader.js`: Hydrates redis with sets based on the vehicle database. 
