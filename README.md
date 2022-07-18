@@ -118,6 +118,19 @@ Result:
 
 As we can see, we have 8 unique vins that exist in these three sets. Cool!
 
+### Returning results
+
+So we have an array of vin numbers, well now we want to return this as an array of json payloads right? Thats why we have our `data:vehicles:*` set right?
+
+To make this work youc an use a library, or a redis-cli module called: "[RedisJSON](https://redis.io/docs/stack/json/)" Which will let you essentially return them as an array of vehicles:
+
+Command: 
+```
+JSON.ARRAPPEND data:vehicles:1G1FB3DS1K0113498 data:vehicles:2C3CDZJG4KH617616 $
+```
+
+But I would recommend doing this in code with a library, just make sure you do this union of values on the redis server, not in code. We dont want to hit redis once for each record 😛.
+
 ## Conclusion
 
 You can use this pattern to easily build out complex search/filtering systems using basic set theory principles. 
