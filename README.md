@@ -16,7 +16,7 @@ During this example, we will be using redis and basic set theory principles to s
 - **Union:** The result of two or more sets joined, containing the values from all sets. (No duplicates)
 - **Inverse Sets:** A set containing keys, where the value is the key.
 
-## Getting Started
+## 🔴 Getting Started
 
 For this demo we need to start redis and hydrate data in the new searchable format.
 
@@ -32,7 +32,7 @@ Now we can start redis commander which is the tool we will use to look at the da
 
 4) Install: `npm install -g redis-commander`
 
-### Looking at the data
+## 🔴 Looking at the data
 
 First off start Redis Commander by running `redis-commander` in the terminal. Once you have that running, navigate to: `localhost:8081` in a web browser and add a connection to `localhost:6379`. Now you should see your sets which we will be working with today.
 
@@ -82,13 +82,23 @@ A common pattern I like to implement, is the data namespace set. This is just a 
 
 ![Redis_Data](images/redis_data.png)
 
-## Finding Data
+## 🔴 Finding Data
 
 Alright here is where the rubber hits the road: How do I use this data to create ultra high performant search/filter operations across this dataset? Lets get started...
 
 ### Your first Union
 
-Information here...
+Lets say we want to get a list of vehicles which are in fact cars. We could have a composite set with the following sets within it: `` or we can query this using a union. Check it out:
+
+Command: 
+```
+...
+```
+Result:
+```
+...
+```
+
 
 ### Your first Intersection
 
@@ -139,7 +149,7 @@ But I would recommend doing this in code with a library, just make sure you do t
 
 ![Redis_JsonAppend](images/code_jsonappend.png)
 
-## Conclusion
+## 🔴 Conclusion
 
 You can use this pattern to easily build out complex search/filtering systems using basic set theory principles. 
 
