@@ -6,6 +6,14 @@ A sample redis hydrator using generic vehicle data. In thie example we have two 
 
 During this example, we will be using redis and basic set theory principles to search vehicles quickly.
 
+## Important Terms
+
+- Set: A unique list of values, belonging to a key.
+- Superset: A set of sets.
+- Intersection: The result of two or more sets joined, of only the values which belong to all sets. (No duplicates)
+- Union: Teh result of two or more sets joined, containing the values from all sets. (No duplicates)
+- Inverse Sets: A set containing keys, where the value is the key.
+
 ## Getting Started
 
 For this demo we need to start redis and hydrate data in the new searchable format.
