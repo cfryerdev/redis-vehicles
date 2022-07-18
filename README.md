@@ -48,27 +48,29 @@ Lets continue on...
 
 You will immediately notice the duplicitive nature of this pattern, but this is absolutely intentional. Each set is a "lense" in which you look at the data. We trade response time, for storage cost, which is signifigantly cheaper.
 
+We want as many sets, inverse sets, and supersets as possible. Ideally as many ways you might look at data, we want sets for each.
+
 ### Browsing a Set
 
-Information here...
+Simply expanding out shows the heiarchy of a set's namespace by using a folder structure. In redis these are flat sets, but Redis Commander gives us a good visual. We can see in the following example that a simple set has a key and a list of values. In this case a list of all cars with three doors.
 
 ![Redis_Sets](images/redis_sets.png)
 
 ### Inverse Sets
 
-Information here...
+Inverse sets are a great way to see what sets, another key is in. So instead of a Key and a bunch of values, you have values with a list of keys in each. For this example, we see a list of vins, and what sets this vin is found in!
 
 ![Redis_InverseSets](images/redis_inversesets.png)
 
 ### Composits or Supersets
 
-Information here...
+Composits (or supersets) are essentially sets of sets. Lets take fuel efficency for example... What makes a vehicle fuel effient? Fuel Capacity? Electric Motors? 3 or 4 Cylendar engines? In the following example we create a composit called "fuel efficient" and within it we list the sets that contain vehicles with fuel efficent traits. We can use these to summarize business logic or grouping of data!
 
 ![Redis_Composits](images/redis_composits.png)
 
-### Data
+### Vehicle Data
 
-Information here...
+A common pattern I like to implement, is the data namespace set. This is just a simple set where the key is a vin and the value is a json payload of the entire vehicle. I can use this for lookups as well!
 
 ![Redis_Data](images/redis_data.png)
 
