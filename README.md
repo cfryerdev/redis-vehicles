@@ -1,5 +1,7 @@
 # Set Theory using Redis & Vehicles (Beginners)
-A sample redis hydrator using generic vehicle data. In thie example we have two files:
+Set Theory can be a deep and complex topic that may scare many away. Over the years I have found teaching the basic concepts can make this fun and useful in your daily life as an engineer.
+
+This is a sample redis hydrator using generic vehicle data. In thie example we have two files:
 
 - `database.json`: The vehicle database we will be searching, 1800 records.
 - `loader.js`: Hydrates redis with sets based on the vehicle database. 
@@ -53,6 +55,8 @@ We want as many sets, inverse sets, and supersets as possible. Ideally as many w
 ### Counts
 
 Natively in each set and namespace, we have a length that is stored at write. We dont have to query for this, we can simply use a command or visually look at the amount of vehicles we have in each set! 
+
+![Redis_Counts](images/redis_counts.png)
 
 ### Browsing a Set
 
