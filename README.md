@@ -76,6 +76,10 @@ Information here...
 
 ![Redis_Data](images/redis_data.png)
 
+## Finding Data
+
+Alright here is where the rubber hits the road: How do I use this data to create ultra high performant search/filter operations across this dataset? Lets get started...
+
 ### Your first Union
 
 Information here...
