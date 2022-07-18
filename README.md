@@ -14,6 +14,12 @@ During this example, we will be using redis and basic set theory principles to s
 - **Union:** The result of two or more sets joined, containing the values from all sets. (No duplicates)
 - **Inverse Sets:** A set containing keys, where the value is the key.
 
+## Recommended Watches
+
+- https://www.youtube.com/watch?v=tyDKR4FG3Yw
+- https://www.youtube.com/watch?v=xZELQc11ACY
+- https://www.youtube.com/watch?v=4TlCToZZ5gA
+
 ## Getting Started
 
 For this demo we need to start redis and hydrate data in the new searchable format.
