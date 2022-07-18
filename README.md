@@ -24,7 +24,7 @@ For this demo we need to start redis and hydrate data in the new searchable form
 
 Now we can start redis commander which is the tool we will use to look at the data.
 
-3) Install: `npm install -g redis-commander`
+4) Install: `npm install -g redis-commander`
 
 ## Looking at the data
 
