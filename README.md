@@ -28,7 +28,7 @@ For this demo we need to start redis and hydrate data in the new searchable form
 
 1) Start Redis: `docker run -d --name dev-redis -p 6379:6379 -d redis`
 2) Install Dependencies: `npm i`
-3) Hydrate Redis: `cd src && node --experimental-json-modules loader.js`
+3) Lastly, Hydrate Redis: `npm start`
 
 First lets ensure docker is running...
 
