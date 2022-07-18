@@ -19,7 +19,8 @@ During this example, we will be using redis and basic set theory principles to s
 For this demo we need to start redis and hydrate data in the new searchable format.
 
 1) Start Redis: `docker run -d --name dev-redis -p 6379:6379 -d redis`
-2) Hydrate Redis: `node --experimental-json-modules loader.js`
+2) Install Dependencies: `npm i`
+3) Hydrate Redis: `node --experimental-json-modules loader.js`
 
 Now we can start redis commander which is the tool we will use to look at the data.
 
