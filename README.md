@@ -44,6 +44,10 @@ First off start Redis Commander by running `redis-commander` in the terminal. On
 
 ![Redis_Hydrated](images/redis_hydrated.png)
 
+Well how do we create these sets... well its actually quite simple and requires very little code. As you see below, we have a simple loop which puts data in the correct set by using a namespace string separated by the `:` character.  Thats really it. This current example is written in node, but Redis supports almost every language you could think of. 
+
+![Code_Hydrate](images/code_hydrate.png)
+
 ### Duplicative Data & Lenses
 
 You will immediately notice the duplicitive nature of this pattern, but this is absolutely intentional. Each set is a "lense" in which you look at the data. We trade response time, for storage cost, which is signifigantly cheaper.
