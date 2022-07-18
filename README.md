@@ -6,7 +6,7 @@ A sample redis hydrator using generic vehicle data. In thie example we have two 
 
 During this example, we will be using redis and basic set theory principles to search vehicles quickly.
 
-## Important Terms
+### Important Terms
 
 - **Set:** A unique list of values, belonging to a key.
 - **Superset:** A set of sets.
@@ -14,7 +14,7 @@ During this example, we will be using redis and basic set theory principles to s
 - **Union:** The result of two or more sets joined, containing the values from all sets. (No duplicates)
 - **Inverse Sets:** A set containing keys, where the value is the key.
 
-## Recommended Watches
+### Recommended Watches
 
 These tend to be quite heavy, so I recommend watching these after this exercise. 
 
@@ -34,24 +34,24 @@ Now we can start redis commander which is the tool we will use to look at the da
 
 4) Install: `npm install -g redis-commander`
 
-## Looking at the data
+### Looking at the data
 
 First off start Redis Commander by running `redis-commander` in the terminal. Once you have that running, navigate to: `localhost:8081` in a web browser and add a connection to `localhost:6379`. Now you should see your databases, inside `db0` will be our sets we will be working with today.
 
 
-## Duplicative Data & Lenses
+### Duplicative Data & Lenses
 
 You will immediately notice the duplicitive nature of this pattern, but this is absolutely intentional. Each set is a "lense" in which you look at the data. We trade response time, for storage cost, which is signifigantly cheaper.
 
-## Browsing a Set
+### Browsing a Set
 
-## Supersets
+### Supersets
 
-## Inverse Sets
+### Inverse Sets
 
-## Your first Union
+### Your first Union
 
-## Your first Intersection
+### Your first Intersection
 
 ## Conclusion
 
