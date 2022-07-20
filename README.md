@@ -18,7 +18,7 @@ During this example, we will be using redis and basic set theory principles to s
 
 ## 🔴 Getting Started
 
-For this demo we need to start redis and hydrate data in the new searchable format.
+For this demo we need to start redis and hydrate data in the new searchable format. Instead of standing up redis and configuring it and all that, lets just run it in docker to make this process simple. 
 
 1) Start Redis: `docker run -d --name dev-redis -p 6379:6379 -d redis`
 2) Install Dependencies: `npm i`
