@@ -1,0 +1,16 @@
+{
+  "include": ["**/*.ts"],
+  "files": ["./custom.d.ts"],
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "es2022",
+    "moduleResolution": "node",
+    "strict": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

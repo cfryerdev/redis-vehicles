@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "8031ff5b-a839-460e-9761-2c8d43f822f3",
+		"name": "Inventory Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Redis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/health/redis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"health",
+						"redis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pageSize\": 25,\n    \"page\": 1,\n    \"text\": \"laramie\",\n\t\"facets\": [\n        {\n\t\t\t\"name\": \"years\",\n\t\t\t\"values\": [ \"2011\", \"2010\", \"2009\", \"2008\", \"2007\", \"2006\", \"2005\" ]\n\t\t},\n        {\n            \"name\": \"makes\",\n            \"values\": [ \"Dodge\" ]\n        }\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Facets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/search/facets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"search",
+						"facets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Facets - Years",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/search/facets/years",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"search",
+						"facets",
+						"years"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/vehicle/3D7MX48C57G756583",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicle",
+						"3D7MX48C57G756583"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicle - Attributes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[ \"options\", \"notes\" ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vehicle/3D7MX48C57G756583/with-attributes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicle",
+						"3D7MX48C57G756583",
+						"with-attributes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicle - Select Properties",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[ \"year\", \"make\", \"model\", \"trim\" ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vehicle/3D7MX48C57G756583/select-properties",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicle",
+						"3D7MX48C57G756583",
+						"select-properties"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

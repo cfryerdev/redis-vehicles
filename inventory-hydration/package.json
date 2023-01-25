@@ -1,0 +1,14 @@
+{
+    "name": "inventory-api-hydration",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "NODE_NO_WARNINGS=1 && node --experimental-json-modules index.js"
+    },
+    "dependencies": {
+        "@redis/search": "^1.1.0",
+        "dotenv": "^16.0.2",
+        "redis": "4.3.1"
+    }
+}

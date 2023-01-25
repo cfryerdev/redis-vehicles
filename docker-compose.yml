@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  cache:
+    container_name: inventory-cache
+    image: redis/redis-stack-server
+    restart: always
+    ports:
+      - '6379:6379'
+    volumes:
+      - /var/lib/redis
+  hydration:
+    container_name: inventory-hydration
+    build:
+      context: ./inventory-hydration
+      dockerfile: Dockerfile
+    environment:
+      REDIS_PREFIX: redis
+      REDIS_HOST: cache
+      REDIS_PORT: 6379
+      REDIS_DB: 0
+      REDIS_KEY:
+      REDIS_SLOTPREFIX: search
+    depends_on:
+      - cache
+  api:
+    container_name: inventory-api
+    build:
+      context: ./inventory-api
+      dockerfile: Dockerfile
+    command: npm run start:prod
+    ports:
+      - 3000:3000
+    environment:
+      REDIS_PREFIX: redis
+      REDIS_HOST: cache
+      REDIS_PORT: 6379
+      REDIS_DB: 0
+      REDIS_KEY:
+      REDIS_SLOTPREFIX: search
+    depends_on:
+      - cache
+      - hydration
