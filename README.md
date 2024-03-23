@@ -18,6 +18,12 @@ docker-compose up
 
 Once up, you should be able to access this via postman, or http://localhost:3000/api-docs/
 
+## Stand up just Redis
+
+```bash
+docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+```
+
 ## Looking at the data
 
 If you want to look through the data, i highly recommend https://resp.app/ ... it should connect via localhost no issues. 
